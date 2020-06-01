@@ -2,7 +2,13 @@
 
 An opinionated API scaffolding tool using gorm and gin-gonic
 
-## Get started
+## Contents
+[Get Started](#get-started)
+[About] (#about)
+[Example] (#example)
+
+
+## Get Started
 ```bash
 $ go get https://github.com/faysal-ishtiaq/genesis
 $ mkdir appName
@@ -75,7 +81,7 @@ Global Flags:
 
 ```
 
-### Example
+## Example
 Let's build a test app with Todo service
 
 ```bash
