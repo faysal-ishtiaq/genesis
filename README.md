@@ -9,6 +9,7 @@ go get https://github.com/faysal-ishtiaq/genesis
 - mkdir appName
 - cd appName
 - genesis init -n appName -e sqlite
+- go generate # to install dependencies and intializing go module
 - genesis add -s serviceName
 
 Then add serviceName.InitDB() in initDB() function of main.go, add serviceName.BindRoutes() in main function in main.go, change model.go, dto.go, api.go the way you want it!
