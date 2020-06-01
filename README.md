@@ -20,4 +20,24 @@ Let's build a test app with Todo service
 - mkdir test && cd test
 - cd test
 - genesis init -n test -e sqlite
+- go generate
 - genesis add -s todo -m task
+
+Now, we have to add our service in main.go
+
+in main.go/initDB(), write:
+```go
+todo.InitDB(db)
+```
+before `return db` statement.
+
+in main.go/main(), write:
+```go
+todo.BindRoutes(db, router)
+```
+before 
+```go
+	err := router.Run()
+	if err != nil {
+		panic(err)
+	}```
