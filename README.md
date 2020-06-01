@@ -11,5 +11,12 @@ go get https://github.com/faysal-ishtiaq/genesis
 - genesis init -n appName -e sqlite
 - genesis add -s serviceName
 
-Then change model.go, api.go the way you want it!
+Then add serviceName.InitDB() in initDB() function of main.go, add serviceName.BindRoutes() in main function in main.go, change model.go, dto.go, api.go the way you want it!
 
+### Example
+Let's build a test app with Todo service
+
+- mkdir test && cd test
+- cd test
+- genesis init -n test -e sqlite
+- genesis add -s todo -m task
