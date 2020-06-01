@@ -3,9 +3,11 @@
 An opinionated API scaffolding tool using gorm and gin-gonic
 
 ## Contents
-[Get Started](#get-started)
-[About] (#about)
-[Example] (#example)
+- [Genesis](#genesis)
+  - [Contents](#contents)
+  - [Get Started](#get-started)
+  - [About](#about)
+  - [Example](#example)
 
 
 ## Get Started
